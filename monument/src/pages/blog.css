@@ -8,7 +8,7 @@ header h2 {
 	letter-spacing: 0.3rem;
 }
 
-header {
+#blog-header {
 	background-image: url('../images/blog_header_bg.jpg');
 	background-size: cover;
 	background-position: center;

@@ -15,9 +15,9 @@ const Gallery = (props) => {
 			<h3>A visual guide to the Southwest</h3>
 			<div class="masonry">
 				<img src={gallery1} alt="" />
-				<img src={gallery2} alt="" />
 				<img src={gallery3} alt="" />
 				<img src={gallery4} alt="" />
+				<img src={gallery2} alt="" />
 				<img src={gallery5} alt="" />
 				<img src={gallery6} alt="" />
 			</div>
