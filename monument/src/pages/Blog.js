@@ -8,9 +8,9 @@ import Comment from '../components/Comment'
 
 const Blog = (props) => {
   return (
-    <body class="blog-page">
+    <body className="blog-page">
       <BlogHeader />
-      <div class="wrap grid-wrapper">
+      <div className="wrap grid-wrapper">
         <BlogArticle />
         <Sidebar />
       </div>

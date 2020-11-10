@@ -10,10 +10,10 @@ import gallery6 from "../images/gallery_6.jpg";
 const Gallery = (props) => {
   return (
     <section id="gallery">
-		<div class="wrap">
+		<div className="wrap">
 			<h2>Issue Twenty</h2>
 			<h3>A visual guide to the Southwest</h3>
-			<div class="masonry">
+			<div className="masonry">
 				<img src={gallery1} alt="" />
 				<img src={gallery3} alt="" />
 				<img src={gallery4} alt="" />

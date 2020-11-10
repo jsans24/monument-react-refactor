@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = (props) => {
   return (
-    <header class="vertical-center">
+    <header className="vertical-center">
 
 		<div>
 			<h1><a href="">Monument</a></h1>
