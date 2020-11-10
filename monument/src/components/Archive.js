@@ -1,13 +1,12 @@
 import React from 'react';
-import Article, { Articles } from './Article';
+import Article, { articleList } from './Article';
 
 
 
 const Archive = (props) => {
 
-  const ArticleComponents = Article.map((articleObj, index) => {
-    articleObj.key = index;
-    return Articles(articleObj);
+  const getArticles = articleList.map((articleObj, index) => {
+    return <Article article={articleObj} key={index} />;
   });
 
   return (
@@ -15,7 +14,7 @@ const Archive = (props) => {
       <h2>From the Archive</h2>
 
       <div className="grid-wrapper articles">
-        {ArticleComponents}
+        {getArticles}
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import articleImageOne from '../images/article_1.jpg'
 import articleImageTwo from '../images/article_2.jpg'
 import articleImageThree from '../images/article_3.jpg'
 
-const Article = [
+export const articleList = [
   {
     image: articleImageOne,
     title: 'Issue Twenty - The Southwest',
@@ -20,7 +20,7 @@ const Article = [
   },
 ]
 
-export const Articles = (props) => {
+const Article = (props) => {
   return (
     <article className="col-third">
       <img src={props.image} alt="" />
