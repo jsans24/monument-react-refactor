@@ -23,10 +23,10 @@ export const articleList = [
 const Article = (props) => {
   return (
     <article className="col-third">
-      <img src={props.image} alt="" />
+      <img src={props.article.image} alt="" />
       <div>
-        <h3>{props.title}</h3>
-        <p>{props.body}</p>
+        <h3>{props.article.title}</h3>
+        <p>{props.article.body}</p>
         <button>Read More</button>
       </div>
     </article>
