@@ -12,12 +12,20 @@ import {
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Landing />
-      <Blog />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Landing />
+          </Route>
+          <Route exact path="/blog">
+            <Blog />
+          </Route>
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

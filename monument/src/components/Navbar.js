@@ -1,14 +1,21 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = (props) => {
   return (
     <nav>
       <a className="hamburger" href="/"><i className="fa fa-bars"></i></a>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><HashLink to="/#about">About</HashLink></li>
+        <li><HashLink to="/#gallery">Gallery</HashLink></li>
+        <li><HashLink to="/blog#top">Blog</HashLink></li>
+        <li><HashLink to="/#contact">Contact</HashLink></li>
       </ul>
 	  </nav>
   )
